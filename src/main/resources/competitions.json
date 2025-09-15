@@ -1,0 +1,98 @@
+[
+  {
+    "id": 1,
+    "name": "春季足球锦标赛",
+    "date": "2025-03-21",
+    "location": "北京奥体中心",
+    "sport": "足球",
+    "teams": [
+      {
+        "teamId": 101,
+        "teamName": "北京雄狮",
+        "players": [
+          { "playerId": 1, "name": "张伟", "position": "前锋", "goals": 2, "assists": 1 },
+          { "playerId": 2, "name": "李强", "position": "中场", "goals": 0, "assists": 2 },
+          { "playerId": 3, "name": "王磊", "position": "后卫", "goals": 0, "assists": 0 }
+        ]
+      },
+      {
+        "teamId": 102,
+        "teamName": "上海火箭",
+        "players": [
+          { "playerId": 4, "name": "陈晨", "position": "前锋", "goals": 1, "assists": 0 },
+          { "playerId": 5, "name": "赵敏", "position": "中场", "goals": 0, "assists": 1 },
+          { "playerId": 6, "name": "刘洋", "position": "守门员", "goals": 0, "assists": 0 }
+        ]
+      }
+    ],
+    "result": {
+      "homeTeam": "北京雄狮",
+      "awayTeam": "上海火箭",
+      "homeScore": 3,
+      "awayScore": 1,
+      "winner": "北京雄狮"
+    }
+  },
+  {
+    "id": 2,
+    "name": "夏季篮球对抗赛",
+    "date": "2025-07-10",
+    "location": "上海体育馆",
+    "sport": "篮球",
+    "teams": [
+      {
+        "teamId": 201,
+        "teamName": "广州飞虎",
+        "players": [
+          { "playerId": 7, "name": "周杰", "position": "控球后卫", "points": 18, "assists": 5 },
+          { "playerId": 8, "name": "黄磊", "position": "大前锋", "points": 12, "assists": 2 }
+        ]
+      },
+      {
+        "teamId": 202,
+        "teamName": "深圳雷霆",
+        "players": [
+          { "playerId": 9, "name": "吴昊", "position": "得分后卫", "points": 20, "assists": 3 },
+          { "playerId": 10, "name": "林佳", "position": "中锋", "points": 15, "assists": 1 }
+        ]
+      }
+    ],
+    "result": {
+      "homeTeam": "广州飞虎",
+      "awayTeam": "深圳雷霆",
+      "homeScore": 85,
+      "awayScore": 90,
+      "winner": "深圳雷霆"
+    }
+  },
+  {
+    "id": 3,
+    "name": "全国乒乓球公开赛",
+    "date": "2025-09-05",
+    "location": "南京体育馆",
+    "sport": "乒乓球",
+    "teams": [
+      {
+        "teamId": 301,
+        "teamName": "北京代表队",
+        "players": [
+          { "playerId": 11, "name": "马龙", "position": "单打", "wins": 2, "losses": 0 }
+        ]
+      },
+      {
+        "teamId": 302,
+        "teamName": "广东代表队",
+        "players": [
+          { "playerId": 12, "name": "樊振东", "position": "单打", "wins": 1, "losses": 1 }
+        ]
+      }
+    ],
+    "result": {
+      "homeTeam": "北京代表队",
+      "awayTeam": "广东代表队",
+      "homeScore": 3,
+      "awayScore": 2,
+      "winner": "北京代表队"
+    }
+  }
+]
