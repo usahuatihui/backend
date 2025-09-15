@@ -1,0 +1,5 @@
+[
+  { "id": 1, "name": "Spring Marathon", "date": "2025-05-01", "location": "Beijing" },
+  { "id": 2, "name": "Summer Swimming Contest", "date": "2025-07-15", "location": "Shanghai" },
+  { "id": 3, "name": "Autumn Football Cup", "date": "2025-09-10", "location": "Guangzhou" }
+]
