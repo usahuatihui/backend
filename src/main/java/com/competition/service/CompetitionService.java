@@ -19,8 +19,8 @@ public class CompetitionService {
         try {
             ObjectMapper mapper = new ObjectMapper();
             ClassPathResource resource = new ClassPathResource("competitions.json");
-            competitions = mapper.readValue(resource.getInputStream(),
-                    new TypeReference<List<Competition>>() {});
+            InputStream is = resource.getInputStream();
+            competitions = mapper.readValue(is, new TypeReference<List<Competition>>() {});
         } catch (Exception e) {
             throw new RuntimeException("加载静态文件失败", e);
         }
