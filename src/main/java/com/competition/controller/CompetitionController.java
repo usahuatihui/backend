@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 @RestController
-@RequestMapping("/api/competitions")
+@RequestMapping(value = "/api/competitions", produces = "application/json; charset=UTF-8")
 public class CompetitionController {
     private final CompetitionService service;
 
