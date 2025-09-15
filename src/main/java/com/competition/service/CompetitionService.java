@@ -4,8 +4,8 @@ import com.example.competition.model.Competition;
 import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import org.springframework.stereotype.Service;
+import jakarta.annotation.PostConstruct; // ✅ 用 jakarta.annotation
 
-import javax.annotation.PostConstruct;
 import java.io.InputStream;
 import java.util.List;
 
