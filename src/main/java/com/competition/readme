@@ -1,0 +1,13 @@
+├─ Dockerfile
+├─ src/
+│  ├─ main/
+│  │  ├─ java/com/example/competition/
+│  │  │   ├─ CompetitionApp.java
+│  │  │   ├─ controller/
+│  │  │   │    └─ CompetitionController.java
+│  │  │   ├─ model/
+│  │  │   │    └─ Competition.java
+│  │  │   └─ service/
+│  │  │        └─ CompetitionService.java
+│  │  └─ resources/
+│  │       └─ competitions.json
