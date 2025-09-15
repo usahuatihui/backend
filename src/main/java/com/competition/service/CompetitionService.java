@@ -4,7 +4,8 @@ import com.example.competition.model.Competition;
 import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import org.springframework.stereotype.Service;
-import jakarta.annotation.PostConstruct; // ✅ 用 jakarta.annotation
+import jakarta.annotation.PostConstruct;
+import org.springframework.core.io.ClassPathResource;
 
 import java.io.InputStream;
 import java.util.List;
@@ -17,8 +18,9 @@ public class CompetitionService {
     public void loadData() {
         try {
             ObjectMapper mapper = new ObjectMapper();
-            InputStream is = getClass().getResourceAsStream("/competitions.json");
-            competitions = mapper.readValue(is, new TypeReference<List<Competition>>() {});
+            ClassPathResource resource = new ClassPathResource("competitions.json");
+            competitions = mapper.readValue(resource.getInputStream(),
+                    new TypeReference<List<Competition>>() {});
         } catch (Exception e) {
             throw new RuntimeException("加载静态文件失败", e);
         }
