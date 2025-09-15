@@ -17,7 +17,7 @@ public class CorsConfig {
 
         // 允许的前端地址
         config.setAllowedOrigins(Arrays.asList(
-                "https://frontend.onrender.com", // Render static site
+                "https://frontend-qbhh.onrender.com", // Render static site
                 "http://localhost:3000"          // 本地开发环境
         ));
 
